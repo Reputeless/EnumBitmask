@@ -1,7 +1,7 @@
 ﻿
 # include <cstdint>
 # include <iostream>
-# include "EnumBimask.hpp"
+# include "EnumBitmask.hpp"
 
 namespace mynamespcae
 {

@@ -7,7 +7,7 @@
 
 ```C++
 # include <iostream>
-# include "EnumBimask.hpp"
+# include "EnumBitmask.hpp"
 
 enum class OpenMode
 {
