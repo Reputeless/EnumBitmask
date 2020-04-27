@@ -3,7 +3,7 @@
 # include <iostream>
 # include "EnumBitmask.hpp"
 
-namespace mynamespcae
+namespace mynamespace
 {
 	enum class Flag : std::uint8_t
 	{
@@ -22,7 +22,7 @@ namespace mynamespcae
 
 int main()
 {
-	using mynamespcae::Flag;
+	using mynamespace::Flag;
 
 	constexpr Flag a = (Flag::Mask_1 | Flag::Mask_2);
 	constexpr Flag b = (a & Flag::Mask_2);
