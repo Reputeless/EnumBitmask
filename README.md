@@ -9,20 +9,20 @@
 # include <iostream>
 # include "EnumBimask.hpp"
 
-enum class OpemMode
+enum class OpenMode
 {
 	Append	= 1,
 	Binary	= 2,
 	Input	= 4,
 	Output	= 8,
 };
-DEFINE_BITMASK_OPERATORS(OpemMode)
+DEFINE_BITMASK_OPERATORS(OpenMode)
 
 int main()
 {
-	constexpr OpemMode openMode = OpemMode::Binary | OpemMode::Input;
+	constexpr OpenMode openMode = OpenMode::Binary | OpenMode::Input;
 	
-	if (openMode & OpemMode::Binary)
+	if (openMode & OpenMode::Binary)
 	{
 		std::cout << "Binary mode" << '\n';
 	}
